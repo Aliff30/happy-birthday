@@ -120,20 +120,32 @@ body {
   position: relative;
   top: 10vh;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* jarak antar baris */
+}
+
+.six .photo-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* agar responsif */
+  gap: 15px; /* jarak antar gambar */
 }
 
 .six img {
   display: inline-block;
-  height: 350px;
-  max-width: 100%;
-  /* height: auto; */
+  height: 220px; /* dikurangi agar dua baris pas */
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .six .hat {
-  left: 41.5%;
   position: absolute;
-  /* transform: scale(0.1); */
   top: -35%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 80px;
 }
 
